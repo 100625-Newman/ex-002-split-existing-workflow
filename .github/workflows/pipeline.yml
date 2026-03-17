@@ -25,5 +25,8 @@ jobs:
       - name: Run tests
         run: pytest test_app.py -v
 
+      - name: Disk check
+        run: df -h
+
   # TODO: Replace the `quality` job above with separate `lint` and `test` jobs
   # both running on ubuntu-latest and keeping the same steps.
